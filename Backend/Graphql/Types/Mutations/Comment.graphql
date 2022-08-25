@@ -1,0 +1,9 @@
+type Mutation {
+  createComment(data: createCommentInput): Comment!
+  deleteComment(id:ID!): Comment!
+}
+
+input createCommentInput {
+  text: String!
+  post:ID!
+}

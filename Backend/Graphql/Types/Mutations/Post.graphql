@@ -1,0 +1,9 @@
+type Mutation {
+  createPost(data: createPostInput): Post!
+  deletePost(id: ID!): Post!
+}
+
+input createPostInput {
+  title: String!
+  description: String!
+}

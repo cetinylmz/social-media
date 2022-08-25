@@ -1,0 +1,13 @@
+type Query {
+   getComments: [Comment]
+
+}
+
+type Comment {
+  id: ID!
+  text:String!
+  user:ID!
+  post:ID!
+
+  
+}
